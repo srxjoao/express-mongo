@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Home | Sistema Acadêmico</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        height: 100px;
+        text-align: center;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    nav a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+    nav a:hover {
+        text-decoration: underline;
+        font-style:italic;
+        color: rgb(189, 244, 250);
+    }
+    h1 {
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    h2{
+        color: green;
+        display: flex;
+        justify-content: center; 
+        margin-top: 15px;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        background-color: whitesmoke;
+        padding: 10px;
+        border-radius: 5px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    p {
+        font-size: 18px;
+        color: #000000;
+    }
+    .link {
+        color: #000000;
+        text-decoration: none;
+    }
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        height: 50px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    footer p {
+        font-size: 18px;
+        color: #ffffff;
+    }
+    footer a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    footer .linkRede{
+        color: #ffffff;
+    }
+</style>
+<body>
+    <header>
+        <h1>Sistema Acadêmico</h1>
+        <nav>
+            <a href="/"> Home</a>
+            <a href="/estudante/cadastro"> Cadastrar Aluno</a>
+            <a href="/professor/cadastro"> Cadastrar Professor</a>
+        </nav>
+     </header>
+
+         <h2>Bem-Vindo(a) ao Sistema Acadêmico</h2>
+         <div class="container">
+            <p class="text-center">
+                Para listar estudantes na barra do navegador, digite:  <a class="link" href="http://localhost:5001/estudante/listaEstudante">http://localhost:5001/estudante/listaEstudante</a> 
+            </p>
+         </div>
+    <footer>
+        <p>Desenvolvido por: <a class="linkRede" href="https://www.linkedin.com/in/srxjoao1/">João Pedro de Oliveira | Estudante de Programação e Pesquisador</a>
+    </footer>
+</body>
+</html>
